@@ -1,0 +1,29 @@
+{
+    "args": [
+        "-o",
+        "apb3_2_axi4_lite_sdhost",
+        "--base_path",
+        "D:\\Work\\TJ180A484\\TJ180A484S\\ip",
+        "--vlnv",
+        {
+            "vendor": "efinixinc.com",
+            "library": "bridges_and_adaptors",
+            "name": "efx_apb3_2_axi4_lite",
+            "version": "5.2"
+        }
+    ],
+    "conf": {
+        "ADDR_WTH": "10"
+    },
+    "output": {
+        "external_source_source": [
+            "apb3_2_axi4_lite_sdhost\\apb3_2_axi4_lite_sdhost.v",
+            "apb3_2_axi4_lite_sdhost\\apb3_2_axi4_lite_sdhost_tmpl.v",
+            "apb3_2_axi4_lite_sdhost\\apb3_2_axi4_lite_sdhost_define.vh",
+            "apb3_2_axi4_lite_sdhost\\apb3_2_axi4_lite_sdhost_tmpl.vhd"
+        ]
+    },
+    "ooc_synthesis": {},
+    "sw_version": "2025.1.110.4.9",
+    "generated_date": "2026-06-11T03:42:34.775553+00:00"
+}

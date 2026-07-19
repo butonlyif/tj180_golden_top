@@ -1,0 +1,57 @@
+{
+    "args": [
+        "-o",
+        "mipi_csi_tx_2p5g",
+        "--base_path",
+        "D:\\wrw\\Project\\nantian_demo_tj180\\Ti180J484_CSI_LOOPBACK_2.5G_v6\\project_new\\ip",
+        "--vlnv",
+        {
+            "vendor": "efinixinc.com",
+            "library": "mipi",
+            "name": "efx_csi2_tx_top",
+            "version": "5.14"
+        }
+    ],
+    "conf": {
+        "tINIT_NS": "400000",
+        "tINIT_SKEWCAL_NS": "100000",
+        "NUM_DATA_LANE": "4",
+        "ASYNC_STAGE": "2",
+        "HS_BYTECLK_MHZ": "125",
+        "DPHY_CLOCK_MODE": "\"Continuous\"",
+        "PIXEL_FIFO_DEPTH": "2048",
+        "FRAME_MODE": "\"GENERIC\"",
+        "Pack_40": "1",
+        "Pack_48": "1",
+        "Pack_56": "1",
+        "Pack_64": "1",
+        "ENABLE_VCX": "0",
+        "ENABLE_SKEWCAL_INIT": "1",
+        "MIPI_CSI2_TX_DEBUG": "1'b0"
+    },
+    "output": {
+        "external_source_source": [
+            "mipi_csi_tx_2p5g\\mipi_csi_tx_2p5g.sv",
+            "mipi_csi_tx_2p5g\\mipi_csi_tx_2p5g_tmpl.vhd",
+            "mipi_csi_tx_2p5g\\mipi_csi_tx_2p5g_tmpl.sv",
+            "mipi_csi_tx_2p5g\\mipi_csi_tx_2p5g_define.svh"
+        ],
+        "external_example_example": [
+            "mipi_csi_tx_2p5g\\Ti180J484_devkit\\Ti180_mipi.peri.xml",
+            "mipi_csi_tx_2p5g\\Ti180J484_devkit\\Ti180_mipi.xml",
+            "mipi_csi_tx_2p5g\\Ti180J484_devkit\\csichk.v",
+            "mipi_csi_tx_2p5g\\Ti180J484_devkit\\efx_csi2_rx_top.sv",
+            "mipi_csi_tx_2p5g\\Ti180J484_devkit\\efx_csi2_tx_top.sv",
+            "mipi_csi_tx_2p5g\\Ti180J484_devkit\\reset_ctrl.v",
+            "mipi_csi_tx_2p5g\\Ti180J484_devkit\\Ti180_mipi.sdc",
+            "mipi_csi_tx_2p5g\\Ti180J484_devkit\\top_2_5g.sv",
+            "mipi_csi_tx_2p5g\\Ti180J484_devkit\\vga_chk.v",
+            "mipi_csi_tx_2p5g\\Ti180J484_devkit\\vga_gen.v",
+            "mipi_csi_tx_2p5g\\Ti180J484_devkit\\mipi_csi_tx_2p5g.sv",
+            "mipi_csi_tx_2p5g\\Ti180J484_devkit\\mipi_csi_tx_2p5g_define.svh"
+        ]
+    },
+    "ooc_synthesis": {},
+    "sw_version": "2025.2.288.4.15",
+    "generated_date": "2026-06-11T13:59:47.893578+00:00"
+}

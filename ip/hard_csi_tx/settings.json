@@ -1,0 +1,43 @@
+{
+    "args": [
+        "-o",
+        "hard_csi_tx",
+        "--base_path",
+        "D:\\mipi_loop 2\\mipi_loop\\Ti180MIPI\\ip",
+        "--vlnv",
+        {
+            "vendor": "efinixinc.com",
+            "library": "mipi",
+            "name": "efx_csi2_tx_top",
+            "version": "5.14"
+        }
+    ],
+    "conf": {
+        "tINIT_NS": "100000",
+        "tINIT_SKEWCAL_NS": "100000",
+        "NUM_DATA_LANE": "2",
+        "ASYNC_STAGE": "2",
+        "HS_BYTECLK_MHZ": "60",
+        "DPHY_CLOCK_MODE": "\"Continuous\"",
+        "PIXEL_FIFO_DEPTH": "2048",
+        "FRAME_MODE": "\"GENERIC\"",
+        "Pack_40": "1",
+        "Pack_48": "1",
+        "Pack_56": "1",
+        "Pack_64": "1",
+        "ENABLE_VCX": "0",
+        "ENABLE_SKEWCAL_INIT": "0",
+        "MIPI_CSI2_TX_DEBUG": "1'b0"
+    },
+    "output": {
+        "external_source_source": [
+            "hard_csi_tx\\hard_csi_tx_tmpl.vhd",
+            "hard_csi_tx\\hard_csi_tx_tmpl.sv",
+            "hard_csi_tx\\hard_csi_tx.sv",
+            "hard_csi_tx\\hard_csi_tx_define.svh"
+        ]
+    },
+    "ooc_synthesis": {},
+    "sw_version": "2025.2.288.4.15",
+    "generated_date": "2026-04-29T08:47:39.649085+00:00"
+}

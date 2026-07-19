@@ -1,0 +1,95 @@
+{
+    "args": [
+        "-o",
+        "test_tse",
+        "--base_path",
+        "J:\\efinity_prj\\OPT\\create_IP\\ip",
+        "--vlnv",
+        {
+            "vendor": "efinixinc.com",
+            "library": "ethernet",
+            "name": "efx_tsemac",
+            "version": "4.3"
+        }
+    ],
+    "conf": {
+        "VERSION": "16",
+        "TXFIFO_EN": "1",
+        "RXFIFO_EN": "1",
+        "TXFIFO_DTH": "2048",
+        "RXFIFO_DTH": "2048",
+        "PHY_INTF_MODE": "0",
+        "AXIS_DW": "8"
+    },
+    "output": {
+        "external_testbench_modelsim": [
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\modelsim\\test_tse.v"
+        ],
+        "external_source_source": [
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\test_tse_tmpl.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\test_tse.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\test_tse_tmpl.vhd",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\test_tse_define.vh"
+        ],
+        "external_testbench_testbench": [
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\tb_header.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\tb_top.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\ODDR.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\glbl.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\apb3_2_axi4_lite.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\axi4_st_mux.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\mac_pat_gen.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\mac_rx2tx.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\reg_apb3.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\rgmii_2_rmii.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\udp_pat_gen.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\DaulClkFifo.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\temac_ex.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\modelsim.do",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\test_tse.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\test_tse_define.vh"
+        ],
+        "external_testbench_ncsim": [
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\ncsim\\test_tse.v"
+        ],
+        "external_testbench_synopsys": [
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Testbench\\synopsys\\test_tse.v"
+        ],
+        "external_example_example": [
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\T120F324_devkit\\timing.sdc",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\T120F324_devkit\\temac_ex.peri.xml",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\T120F324_devkit\\temac_ex.xml",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\T120F324_devkit\\apb3_2_axi4_lite.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\T120F324_devkit\\axi4_st_mux.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\T120F324_devkit\\header.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\T120F324_devkit\\mac_pat_gen.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\T120F324_devkit\\mac_rx2tx.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\T120F324_devkit\\reg_apb3.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\T120F324_devkit\\rgmii_2_rmii.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\T120F324_devkit\\temac_ex.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\T120F324_devkit\\udp_pat_gen.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\T120F324_devkit\\DaulClkFifo.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\T120F324_devkit\\test_tse.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\T120F324_devkit\\test_tse_define.vh"
+        ],
+        "external_example_2": [
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Ti60F225_devkit\\timing_Ti60.sdc",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Ti60F225_devkit\\temac_ex.peri.xml",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Ti60F225_devkit\\temac_ex.xml",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Ti60F225_devkit\\apb3_2_axi4_lite.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Ti60F225_devkit\\axi4_st_mux.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Ti60F225_devkit\\header.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Ti60F225_devkit\\mac_pat_gen.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Ti60F225_devkit\\mac_rx2tx.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Ti60F225_devkit\\reg_apb3.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Ti60F225_devkit\\rgmii_2_rmii.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Ti60F225_devkit\\temac_ex.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Ti60F225_devkit\\udp_pat_gen.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Ti60F225_devkit\\DaulClkFifo.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Ti60F225_devkit\\test_tse.v",
+            "J:\\efinity_prj\\OPT\\create_IP\\ip\\test_tse\\Ti60F225_devkit\\test_tse_define.vh"
+        ]
+    },
+    "sw_version": "2022.2.322",
+    "generated_date": "2023-03-20T12:24:12.377339"
+}
