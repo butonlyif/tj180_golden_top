@@ -1,0 +1,75 @@
+# =============================================================================
+# .gitignore for TJ180 Golden Top (Efinity Titanium FPGA project)
+# =============================================================================
+
+# ----- Efinity build & place-and-route outputs -----
+outflow/
+work_pnr/
+work_syn/
+work_*/
+*.lpf
+*.place
+*.netlist
+*.cnst
+*.clstdb
+*.gplace
+*.htree
+*.map.rdb
+*.map.v
+*.bit
+*.bin.program
+*.timing.rpt
+
+# ----- Efinity generated reports (regeneratable) -----
+*.map.rpt
+*.place.rpt
+*.hier_util.rpt
+*.hold_fixing.rpt
+*.interface.csv
+*.pinout.csv
+*.pinout.rpt
+*.cdc.rpt
+
+# ----- Efinity peri peripheral-generation outputs -----
+*.peri.cdo
+*.peri.csi
+*.peri.pbn
+*.peri.pt.v
+*.peri.qdelay
+*.peri.rtl.v
+
+# ----- Simulation artifacts (waveforms / dumps / logs) -----
+*.vcd
+*.fst
+*.lxt
+*.ghw
+*.vvp
+*.vpd
+*.wlf
+debug_out.txt
+transcript
+vsim.wlf
+sim/*.out
+sim/*.exe
+sim/work/
+
+# ----- Backup / pre-change snapshot files -----
+*.bak
+*.bak_pre_*
+*.peri.peri.xml.bak_*
+*.peri.xml.bak_*
+
+# ----- Local agent / IDE working state -----
+.awesom/
+.trae/
+.agent-dev-team/
+.history/
+*.log
+
+# ----- OS / Editor cruft -----
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
