@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EFX_PERI_INTERFACE version="1.0">
+<!--
+    TJ180A484S Golden Top - Peripheral Interface Definition
+    Generated based on 项目总结.md pin assignments
+    Package: 484-pin BGA (TJ180A484S)
+    Speed Grade: C4/I3
+-->
+    
+    <!-- ====================================================================== -->
+    <!-- Power/Ground (No user control)                                        -->
+    <!-- ====================================================================== -->
+    
+    <!-- ====================================================================== -->
+    <!-- Clock & Reset                                                         -->
+    <!-- ====================================================================== -->
+    <peripheral name="SYSCLK" type="clock" row="0" col="0">
+        <port name="clk_50m" pin="L29" bank="VCCIO_1" />
+    </peripheral>
+    
+    <peripheral name="DDRCLK" type="clock" row="0" col="0">
+        <port name="ddr_clk_ref" pin="L28" bank="VCCIO_1" />
+    </peripheral>
+    
+    <peripheral name="MIPIREFCLK" type="clock" row="0" col="0">
+        <port name="MIPI_REF_CLK" pin="AF30" bank="VCCIO_3" />
+    </peripheral>
+    
+    <peripheral name="RESET" type="reset" row="0" col="0">
+        <port name="arst_n" pin="M29" bank="VCCIO_1" />
+    </peripheral>
+    
+    <!-- ====================================================================== -->
+    <!-- UART (System Debug)                                                    -->
+    <!-- ====================================================================== -->
+    <peripheral name="UART0" type="uart" row="1" col="0">
+        <port name="system_uart_0_io_rxd" pin="J30" bank="VCCIO_1" />
+        <port name="system_uart_0_io_txd" pin="J29" bank="VCCIO_1" />
+    </peripheral>
+    
+    <!-- ====================================================================== -->
+    <!-- SPI (Flash/Memory)                                                     -->
+    <!-- ====================================================================== -->
+    <peripheral name="SPI0" type="spi" row="1" col="0">
+        <port name="system_spi_0_io_sclk_write" pin="K30" bank="VCCIO_1" />
+        <port name="system_spi_0_io_ss" pin="K29" bank="VCCIO_1" />
+        <port name="system_spi_0_io_data_0_writeEnable" pin="L30" bank="VCCIO_1" />
+        <port name="system_spi_0_io_data_0_read" pin="L31" bank="VCCIO_1" />
+        <port name="system_spi_0_io_data_0_write" pin="M30" bank="VCCIO_1" />
+        <port name="system_spi_0_io_data_1_writeEnable" pin="M31" bank="VCCIO_1" />
+        <port name="system_spi_0_io_data_1_read" pin="N30" bank="VCCIO_1" />
+        <port name="system_spi_0_io_data_1_write" pin="N31" bank="VCCIO_1" />
+    </peripheral>
+    
+    <!-- ====================================================================== -->
+    <!-- I2C (Sensor Control)                                                   -->
+    <!-- ====================================================================== -->
+    <peripheral name="I2C0" type="i2c" row="1" col="0">
+        <port name="system_i2c_0_io_scl_writeEnable" pin="E30" bank="VCCIO_0" />
+        <port name="system_i2c_0_io_scl_write" pin="F30" bank="VCCIO_0" />
+        <port name="system_i2c_0_io_scl_read" pin="E29" bank="VCCIO_0" />
+        <port name="system_i2c_0_io_sda_writeEnable" pin="F29" bank="VCCIO_0" />
+        <port name="system_i2c_0_io_sda_write" pin="G30" bank="VCCIO_0" />
+        <port name="system_i2c_0_io_sda_read" pin="G29" bank="VCCIO_0" />
+    </peripheral>
+    
+    <!-- ====================================================================== -->
+    <!-- GPIO                                                                   -->
+    <!-- ====================================================================== -->
+    <peripheral name="GPIO0" type="gpio" row="1" col="0">
+        <port name="system_gpio_0_io_read[0]" pin="D30" bank="VCCIO_0" />
+        <port name="system_gpio_0_io_read[1]" pin="D31" bank="VCCIO_0" />
+        <port name="system_gpio_0_io_read[2]" pin="E31" bank="VCCIO_0" />
+        <port name="system_gpio_0_io_read[3]" pin="F31" bank="VCCIO_0" />
+        <port name="system_gpio_0_io_write[0]" pin="C30" bank="VCCIO_0" />
+        <port name="system_gpio_0_io_write[1]" pin="C31" bank="VCCIO_0" />
+        <port name="system_gpio_0_io_write[2]" pin="D29" bank="VCCIO_0" />
+        <port name="system_gpio_0_io_write[3]" pin="E28" bank="VCCIO_0" />
+        <port name="system_gpio_0_io_writeEnable[0]" pin="C29" bank="VCCIO_0" />
+        <port name="system_gpio_0_io_writeEnable[1]" pin="D28" bank="VCCIO_0" />
+        <port name="system_gpio_0_io_writeEnable[2]" pin="F28" bank="VCCIO_0" />
+        <port name="system_gpio_0_io_writeEnable[3]" pin="G28" bank="VCCIO_0" />
+    </peripheral>
+    
+    <!-- ====================================================================== -->
+    <!-- SD Card Interface                                                      -->
+    <!-- ====================================================================== -->
+    <peripheral name="SDHOST" type="sdio" row="2" col="0">
+        <port name="sd_cd_n" pin="AB30" bank="VCCIO_6" />
+        <port name="sd_clk_hi" pin="AA29" bank="VCCIO_6" />
+        <port name="sd_cmd_o" pin="Y29" bank="VCCIO_6" />
+        <port name="sd_cmd_oe" pin="Y30" bank="VCCIO_6" />
+        <port name="sd_cmd_i" pin="AA30" bank="VCCIO_6" />
+        <port name="sd_dat_o[0]" pin="W29" bank="VCCIO_6" />
+        <port name="sd_dat_o[1]" pin="W30" bank="VCCIO_6" />
+        <port name="sd_dat_o[2]" pin="V29" bank="VCCIO_6" />
+        <port name="sd_dat_o[3]" pin="V30" bank="VCCIO_6" />
+        <port name="sd_dat_oe[0]" pin="Y31" bank="VCCIO_6" />
+        <port name="sd_dat_oe[1]" pin="AA31" bank="VCCIO_6" />
+        <port name="sd_dat_oe[2]" pin="AB31" bank="VCCIO_6" />
+        <port name="sd_dat_oe[3]" pin="AC31" bank="VCCIO_6" />
+        <port name="sd_dat_i[0]" pin="U29" bank="VCCIO_6" />
+        <port name="sd_dat_i[1]" pin="U30" bank="VCCIO_6" />
+        <port name="sd_dat_i[2]" pin="T29" bank="VCCIO_6" />
+        <port name="sd_dat_i[3]" pin="T30" bank="VCCIO_6" />
+    </peripheral>
+    
+    <!-- ====================================================================== -->
+    <!-- MIPI RX (Camera Input) - 4 Lane                                       -->
+    <!-- ====================================================================== -->
+    <peripheral name="MIPI_RX" type="mipi_csi2_rx" row="3" col="0">
+        <!-- Clock Lane -->
+        <port name="mipi_dphy_rx_clk_CLKOUT" pin="AF28" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_LP_CLK" pin="AF29" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ESC_LAN0_CLK" pin="AE30" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ESC_LAN1_CLK" pin="AE29" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ESC_LAN2_CLK" pin="AD30" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ESC_LAN3_CLK" pin="AD29" bank="VCCIO_3" />
+        
+        <!-- Data Lane 0 -->
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[0]" pin="W28" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[1]" pin="W27" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[2]" pin="V28" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[3]" pin="V27" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[4]" pin="U28" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[5]" pin="U27" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[6]" pin="T28" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[7]" pin="T27" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[8]" pin="R28" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[9]" pin="R27" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[10]" pin="P28" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[11]" pin="P27" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[12]" pin="N28" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[13]" pin="N27" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[14]" pin="M28" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_DATA[15]" pin="M27" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_VALID" pin="L28" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_SYNC" pin="L27" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_SKEWCAL" pin="K28" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN0_SOTSYNC_ERROR" pin="K27" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_ERR_SOT_HS_LAN0" pin="J28" bank="VCCIO_5" />
+        <port name="mipi_dphy_rx_inst2_RX_ACTIVE_HS_LAN0" pin="J27" bank="VCCIO_5" />
+        
+        <!-- Data Lane 1 -->
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[0]" pin="AD28" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[1]" pin="AD27" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[2]" pin="AC28" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[3]" pin="AC27" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[4]" pin="AB28" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[5]" pin="AB27" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[6]" pin="AA28" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[7]" pin="AA27" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[8]" pin="Y28" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[9]" pin="Y27" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[10]" pin="W28" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[11]" pin="W27" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[12]" pin="V28" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[13]" pin="V27" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[14]" pin="U28" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_DATA[15]" pin="U27" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_VALID" pin="T28" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_SYNC" pin="T27" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_SKEWCAL" pin="R28" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN1_SOTSYNC_ERROR" pin="R27" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ERR_SOT_HS_LAN1" pin="P28" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_RX_ACTIVE_HS_LAN1" pin="P27" bank="VCCIO_3" />
+        
+        <!-- Data Lane 2 -->
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[0]" pin="AH28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[1]" pin="AH27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[2]" pin="AG28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[3]" pin="AG27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[4]" pin="AF28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[5]" pin="AF27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[6]" pin="AE28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[7]" pin="AE27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[8]" pin="AD28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[9]" pin="AD27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[10]" pin="AC28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[11]" pin="AC27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[12]" pin="AB28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[13]" pin="AB27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[14]" pin="AA28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_DATA[15]" pin="AA27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_VALID" pin="Y28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_SYNC" pin="Y27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_SKEWCAL" pin="W28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN2_SOTSYNC_ERROR" pin="W27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_ERR_SOT_HS_LAN2" pin="V28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_RX_ACTIVE_HS_LAN2" pin="V27" bank="VCCIO_4" />
+        
+        <!-- Data Lane 3 -->
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[0]" pin="AL28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[1]" pin="AL27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[2]" pin="AK28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[3]" pin="AK27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[4]" pin="AJ28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[5]" pin="AJ27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[6]" pin="AH28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[7]" pin="AH27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[8]" pin="AG28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[9]" pin="AG27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[10]" pin="AF28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[11]" pin="AF27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[12]" pin="AE28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[13]" pin="AE27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[14]" pin="AD28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_DATA[15]" pin="AD27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_VALID" pin="AC28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_SYNC" pin="AC27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_SKEWCAL" pin="AB28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_HS_LAN3_SOTSYNC_ERROR" pin="AB27" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_ERR_SOT_HS_LAN3" pin="AA28" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_RX_ACTIVE_HS_LAN3" pin="AA27" bank="VCCIO_4" />
+        
+        <!-- ESC (Escape Mode) -->
+        <port name="mipi_dphy_rx_inst2_RX_DATA_ESC[0]" pin="K31" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_RX_DATA_ESC[1]" pin="K29" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_RX_DATA_ESC[2]" pin="J31" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_RX_DATA_ESC[3]" pin="J30" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_RX_DATA_ESC[4]" pin="H31" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_RX_DATA_ESC[5]" pin="H30" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_RX_DATA_ESC[6]" pin="G31" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_RX_DATA_ESC[7]" pin="G30" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_RX_LPDT_ESC" pin="F31" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_RX_VALID_ESC" pin="F30" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_RX_TRIGGER_ESC[0]" pin="E31" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_RX_TRIGGER_ESC[1]" pin="E30" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_RX_TRIGGER_ESC[2]" pin="D31" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_RX_TRIGGER_ESC[3]" pin="D30" bank="VCCIO_3" />
+        
+        <!-- ULPS (Ultra Low Power State) -->
+        <port name="mipi_dphy_rx_inst2_ULPS_CLK_ACTIVEN" pin="AH30" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ULPS_LAN0_ACTIVEN" pin="AH29" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ULPS_LAN1_ACTIVEN" pin="AG30" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ULPS_LAN2_ACTIVEN" pin="AG29" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ULPS_LAN3_ACTIVEN" pin="AF30" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ULPS_CLK_ENTER" pin="AE31" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ULPS_LAN0_ENTER" pin="AE28" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ULPS_LAN1_ENTER" pin="AD31" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ULPS_LAN2_ENTER" pin="AD31" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ULPS_LAN3_ENTER" pin="AC30" bank="VCCIO_3" />
+        
+        <!-- Error Signals -->
+        <port name="mipi_dphy_rx_inst2_ESC_LAN0_ERROR" pin="D29" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ESC_LAN1_ERROR" pin="D28" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ESC_LAN2_ERROR" pin="C31" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ESC_LAN3_ERROR" pin="C30" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_LINESTATE_LAN0_ERROR" pin="C29" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_LINESTATE_LAN1_ERROR" pin="C28" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_LINESTATE_LAN2_ERROR" pin="B31" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_LINESTATE_LAN3_ERROR" pin="B30" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ERR_CONTENTION_LP0" pin="B29" bank="VCCIO_3" />
+        <port name="mipi_dphy_rx_inst2_ERR_CONTENTION_LP1" pin="B28" bank="VCCIO_3" />
+        
+        <!-- Stop State -->
+        <port name="mipi_dphy_rx_inst2_STOPSTATE_CLK" pin="AJ30" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_STOPSTATE_LAN0" pin="AJ29" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_STOPSTATE_LAN1" pin="AH30" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_STOPSTATE_LAN2" pin="AH29" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_STOPSTATE_LAN3" pin="AG30" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_RX_CLK_ACTIVE_HS" pin="AK30" bank="VCCIO_4" />
+        
+        <!-- Control -->
+        <port name="mipi_dphy_rx_inst2_FORCE_RX_MODE" pin="AL30" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_RESET" pin="AL29" bank="VCCIO_4" />
+        <port name="mipi_dphy_rx_inst2_RST0_N" pin="AK29" bank="VCCIO_4" />
+    </peripheral>
+    
+    <!-- ====================================================================== -->
+    <!-- MIPI TX (Video Output) - 4 Lane                                       -->
+    <!-- ====================================================================== -->
+    <peripheral name="MIPI_TX" type="mipi_csi2_tx" row="4" col="0">
+        <!-- Clock Lane -->
+        <port name="mipi_dphy_tx_inst1_HS_CLK_REQUEST" pin="A30" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_STOPSTATE_CLK" pin="A29" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_ULPS_CLK_ACTIVEN" pin="A28" bank="VCCIO_0" />
+        
+        <!-- Data Lane 0 -->
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[0]" pin="B27" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[1]" pin="B26" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[2]" pin="C27" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[3]" pin="C26" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[4]" pin="D27" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[5]" pin="D26" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[6]" pin="E27" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[7]" pin="E26" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[8]" pin="F27" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[9]" pin="F26" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[10]" pin="G27" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[11]" pin="G26" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[12]" pin="H27" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[13]" pin="H26" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[14]" pin="J27" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_DATA[15]" pin="J26" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_REQUEST" pin="K26" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_READY" pin="L26" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_HIGHVALID" pin="M26" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN0_SKEWCAL" pin="N26" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_STOPSTATE_LAN0" pin="P26" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_ULPS_LAN0_ACTIVEN" pin="R26" bank="VCCIO_0" />
+        
+        <!-- Data Lane 1 -->
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[0]" pin="A26" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[1]" pin="A25" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[2]" pin="B25" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[3]" pin="B24" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[4]" pin="C25" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[5]" pin="C24" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[6]" pin="D25" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[7]" pin="D24" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[8]" pin="E25" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[9]" pin="E24" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[10]" pin="F25" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[11]" pin="F24" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[12]" pin="G25" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[13]" pin="G24" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[14]" pin="H25" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_DATA[15]" pin="H24" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_REQUEST" pin="J25" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_READY" pin="K25" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_HIGHVALID" pin="L25" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN1_SKEWCAL" pin="M25" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_STOPSTATE_LAN1" pin="N25" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_ULPS_LAN1_ACTIVEN" pin="P25" bank="VCCIO_0" />
+        
+        <!-- Data Lane 2 -->
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[0]" pin="T26" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[1]" pin="T25" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[2]" pin="U26" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[3]" pin="U25" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[4]" pin="V26" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[5]" pin="V25" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[6]" pin="W26" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[7]" pin="W25" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[8]" pin="Y26" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[9]" pin="Y25" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[10]" pin="AA26" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[11]" pin="AA25" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[12]" pin="AB26" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[13]" pin="AB25" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[14]" pin="AC26" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_DATA[15]" pin="AC25" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_REQUEST" pin="AD26" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_READY" pin="AE26" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_HIGHVALID" pin="AF26" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN2_SKEWCAL" pin="AH26" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_STOPSTATE_LAN2" pin="AJ26" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_ULPS_LAN2_ACTIVEN" pin="AK26" bank="VCCIO_1" />
+        
+        <!-- Data Lane 3 -->
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[0]" pin="R24" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[1]" pin="R23" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[2]" pin="P24" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[3]" pin="P23" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[4]" pin="N24" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[5]" pin="N23" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[6]" pin="M24" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[7]" pin="M23" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[8]" pin="L24" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[9]" pin="L23" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[10]" pin="K24" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[11]" pin="K23" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[12]" pin="J24" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[13]" pin="J23" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[14]" pin="H24" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_DATA[15]" pin="H23" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_REQUEST" pin="G24" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_READY" pin="F24" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_HIGHVALID" pin="E24" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_HS_LAN3_SKEWCAL" pin="D24" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_STOPSTATE_LAN3" pin="C24" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_ULPS_LAN3_ACTIVEN" pin="B24" bank="VCCIO_1" />
+        
+        <!-- ESC (Escape Mode) -->
+        <port name="mipi_dphy_tx_inst1_TX_DATA_ESC[0]" pin="A24" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_TX_DATA_ESC[1]" pin="A23" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_TX_DATA_ESC[2]" pin="B23" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_TX_DATA_ESC[3]" pin="B22" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_TX_DATA_ESC[4]" pin="C23" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_TX_DATA_ESC[5]" pin="C22" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_TX_DATA_ESC[6]" pin="D23" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_TX_DATA_ESC[7]" pin="D22" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_TX_LPDT_ESC" pin="E23" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_TX_VALID_ESC" pin="E22" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_TX_READY_ESC" pin="F23" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_TX_TRIGGER_ESC[0]" pin="G23" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_TX_TRIGGER_ESC[1]" pin="G22" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_TX_TRIGGER_ESC[2]" pin="H23" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_TX_TRIGGER_ESC[3]" pin="H22" bank="VCCIO_0" />
+        
+        <!-- ULPS (Ultra Low Power State) -->
+        <port name="mipi_dphy_tx_inst1_ULPS_CLK_ENTER" pin="J22" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_ULPS_LAN0_ENTER" pin="K22" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_ULPS_LAN1_ENTER" pin="L22" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_ULPS_LAN2_ENTER" pin="M22" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_ULPS_LAN3_ENTER" pin="N22" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_ULPS_CLK_EXIT" pin="P22" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_ULPS_LAN0_EXIT" pin="R22" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_ULPS_LAN1_EXIT" pin="T22" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_ULPS_LAN2_EXIT" pin="U22" bank="VCCIO_0" />
+        <port name="mipi_dphy_tx_inst1_ULPS_LAN3_EXIT" pin="V22" bank="VCCIO_0" />
+        
+        <!-- Request ESC -->
+        <port name="mipi_dphy_tx_inst1_REQUESTESC_LAN0" pin="W22" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_REQUESTESC_LAN1" pin="Y22" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_REQUESTESC_LAN2" pin="AA22" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_REQUESTESC_LAN3" pin="AB22" bank="VCCIO_1" />
+        
+        <!-- Control -->
+        <port name="mipi_dphy_tx_inst1_RESET" pin="AC22" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_PLL_UNLOCK" pin="AD22" bank="VCCIO_1" />
+        <port name="mipi_dphy_tx_inst1_PLL_SSC_EN" pin="AE22" bank="VCCIO_1" />
+    </peripheral>
+    
+    <!-- ====================================================================== -->
+    <!-- RGMII Ethernet (From TJ180A484_TSE)                                   -->
+    <!-- ====================================================================== -->
+    <peripheral name="ETH_RGMII" type="rgmii" row="5" col="0">
+        <port name="rgmii_txd_HI[0]" pin="AB20" bank="VCCIO_6" />
+        <port name="rgmii_txd_HI[1]" pin="AB19" bank="VCCIO_6" />
+        <port name="rgmii_txd_HI[2]" pin="AA20" bank="VCCIO_6" />
+        <port name="rgmii_txd_HI[3]" pin="AA19" bank="VCCIO_6" />
+        <port name="rgmii_txd_LO[0]" pin="Y20" bank="VCCIO_6" />
+        <port name="rgmii_txd_LO[1]" pin="Y19" bank="VCCIO_6" />
+        <port name="rgmii_txd_LO[2]" pin="W20" bank="VCCIO_6" />
+        <port name="rgmii_txd_LO[3]" pin="W19" bank="VCCIO_6" />
+        <port name="rgmii_tx_ctl_HI" pin="AF20" bank="VCCIO_6" />
+        <port name="rgmii_tx_ctl_LO" pin="AE20" bank="VCCIO_6" />
+        <port name="rgmii_txc_HI" pin="AF19" bank="VCCIO_6" />
+        <port name="rgmii_txc_LO" pin="AE19" bank="VCCIO_6" />
+        <port name="rgmii_rxd_HI[0]" pin="V20" bank="VCCIO_6" />
+        <port name="rgmii_rxd_HI[1]" pin="V19" bank="VCCIO_6" />
+        <port name="rgmii_rxd_HI[2]" pin="U20" bank="VCCIO_6" />
+        <port name="rgmii_rxd_HI[3]" pin="U19" bank="VCCIO_6" />
+        <port name="rgmii_rxd_LO[0]" pin="T20" bank="VCCIO_6" />
+        <port name="rgmii_rxd_LO[1]" pin="T19" bank="VCCIO_6" />
+        <port name="rgmii_rxd_LO[2]" pin="R20" bank="VCCIO_6" />
+        <port name="rgmii_rxd_LO[3]" pin="R19" bank="VCCIO_6" />
+        <port name="rgmii_rx_ctl_HI" pin="AD20" bank="VCCIO_6" />
+        <port name="rgmii_rx_ctl_LO" pin="AD19" bank="VCCIO_6" />
+        <port name="rgmii_rxc" pin="AC20" bank="VCCIO_6" />
+        <port name="phy_rstn" pin="AC19" bank="VCCIO_6" />
+        <port name="phy_mdo" pin="AB18" bank="VCCIO_6" />
+        <port name="phy_mdo_en" pin="AA18" bank="VCCIO_6" />
+        <port name="phy_mdc" pin="Y18" bank="VCCIO_6" />
+        <port name="phy_mdi" pin="W18" bank="VCCIO_6" />
+    </peripheral>
+    
+    <!-- ====================================================================== -->
+    <!-- DDR AXI Interface                                                     -->
+    <!-- ====================================================================== -->
+    <peripheral name="DDR_AXI0" type="axi" row="6" col="0">
+        <!-- Address Write -->
+        <port name="axi0_AWADDR[0]" pin="P20" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[1]" pin="P19" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[2]" pin="N20" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[3]" pin="N19" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[4]" pin="M20" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[5]" pin="M19" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[6]" pin="L20" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[7]" pin="L19" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[8]" pin="K20" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[9]" pin="K19" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[10]" pin="J20" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[11]" pin="J19" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[12]" pin="H20" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[13]" pin="H19" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[14]" pin="G20" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[15]" pin="G19" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[16]" pin="F20" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[17]" pin="F19" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[18]" pin="E20" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[19]" pin="E19" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[20]" pin="D20" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[21]" pin="D19" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[22]" pin="C20" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[23]" pin="C19" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[24]" pin="B20" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[25]" pin="B19" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[26]" pin="A20" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[27]" pin="A19" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[28]" pin="A18" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[29]" pin="A17" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[30]" pin="B17" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[31]" pin="C17" bank="VCCIO_2" />
+        <port name="axi0_AWADDR[32]" pin="D17" bank="VCCIO_2" />
+        
+        <!-- Address Write Control -->
+        <port name="axi0_AWVALID" pin="E17" bank="VCCIO_2" />
+        <port name="axi0_AWREADY" pin="F17" bank="VCCIO_2" />
+        <port name="axi0_AWBURST[0]" pin="G17" bank="VCCIO_2" />
+        <port name="axi0_AWBURST[1]" pin="H17" bank="VCCIO_2" />
+        <port name="axi0_AWID[0]" pin="J17" bank="VCCIO_2" />
+        <port name="axi0_AWID[1]" pin="K17" bank="VCCIO_2" />
+        <port name="axi0_AWID[2]" pin="L17" bank="VCCIO_2" />
+        <port name="axi0_AWID[3]" pin="M17" bank="VCCIO_2" />
+        <port name="axi0_AWID[4]" pin="N17" bank="VCCIO_2" />
+        <port name="axi0_AWID[5]" pin="P17" bank="VCCIO_2" />
+        <port name="axi0_AWLEN[0]" pin="R17" bank="VCCIO_2" />
+        <port name="axi0_AWLEN[1]" pin="T17" bank="VCCIO_2" />
+        <port name="axi0_AWLEN[2]" pin="U17" bank="VCCIO_2" />
+        <port name="axi0_AWLEN[3]" pin="V17" bank="VCCIO_2" />
+        <port name="axi0_AWLEN[4]" pin="W17" bank="VCCIO_2" />
+        <port name="axi0_AWLEN[5]" pin="Y17" bank="VCCIO_2" />
+        <port name="axi0_AWLEN[6]" pin="AA17" bank="VCCIO_2" />
+        <port name="axi0_AWLEN[7]" pin="AB17" bank="VCCIO_2" />
+        <port name="axi0_AWLOCK" pin="AC17" bank="VCCIO_2" />
+        <port name="axi0_AWCACHE[0]" pin="AD17" bank="VCCIO_2" />
+        <port name="axi0_AWCACHE[1]" pin="AE17" bank="VCCIO_2" />
+        <port name="axi0_AWCACHE[2]" pin="AF17" bank="VCCIO_2" />
+        <port name="axi0_AWCACHE[3]" pin="AH17" bank="VCCIO_2" />
+        <port name="axi0_AWPROT[0]" pin="AJ17" bank="VCCIO_2" />
+        <port name="axi0_AWPROT[1]" pin="AK17" bank="VCCIO_2" />
+        <port name="axi0_AWPROT[2]" pin="AL17" bank="VCCIO_2" />
+        <port name="axi0_AWQOS[0]" pin="A16" bank="VCCIO_2" />
+        <port name="axi0_AWQOS[1]" pin="B16" bank="VCCIO_2" />
+        <port name="axi0_AWQOS[2]" pin="C16" bank="VCCIO_2" />
+        <port name="axi0_AWQOS[3]" pin="D16" bank="VCCIO_2" />
+        <port name="axi0_AWSIZE[0]" pin="E16" bank="VCCIO_2" />
+        <port name="axi0_AWSIZE[1]" pin="F16" bank="VCCIO_2" />
+        <port name="axi0_AWSIZE[2]" pin="G16" bank="VCCIO_2" />
+        
+        <!-- Address Read -->
+        <port name="axi0_ARADDR[0]" pin="H16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[1]" pin="J16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[2]" pin="K16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[3]" pin="L16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[4]" pin="M16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[5]" pin="N16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[6]" pin="P16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[7]" pin="R16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[8]" pin="T16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[9]" pin="U16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[10]" pin="V16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[11]" pin="W16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[12]" pin="Y16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[13]" pin="AA16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[14]" pin="AB16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[15]" pin="AC16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[16]" pin="AD16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[17]" pin="AE16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[18]" pin="AF16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[19]" pin="AH16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[20]" pin="AJ16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[21]" pin="AK16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[22]" pin="AL16" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[23]" pin="A15" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[24]" pin="B15" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[25]" pin="C15" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[26]" pin="D15" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[27]" pin="E15" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[28]" pin="F15" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[29]" pin="G15" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[30]" pin="H15" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[31]" pin="J15" bank="VCCIO_2" />
+        <port name="axi0_ARADDR[32]" pin="K15" bank="VCCIO_2" />
+        
+        <!-- Address Read Control -->
+        <port name="axi0_ARVALID" pin="L15" bank="VCCIO_2" />
+        <port name="axi0_ARREADY" pin="M15" bank="VCCIO_2" />
+        <port name="axi0_ARBURST[0]" pin="N15" bank="VCCIO_2" />
+        <port name="axi0_ARBURST[1]" pin="P15" bank="VCCIO_2" />
+        <port name="axi0_ARID[0]" pin="R15" bank="VCCIO_2" />
+        <port name="axi0_ARID[1]" pin="T15" bank="VCCIO_2" />
+        <port name="axi0_ARID[2]" pin="U15" bank="VCCIO_2" />
+        <port name="axi0_ARID[3]" pin="V15" bank="VCCIO_2" />
+        <port name="axi0_ARID[4]" pin="W15" bank="VCCIO_2" />
+        <port name="axi0_ARID[5]" pin="Y15" bank="VCCIO_2" />
+        <port name="axi0_ARLEN[0]" pin="AA15" bank="VCCIO_2" />
+        <port name="axi0_ARLEN[1]" pin="AB15" bank="VCCIO_2" />
+        <port name="axi0_ARLEN[2]" pin="AC15" bank="VCCIO_2" />
+        <port name="axi0_ARLEN[3]" pin="AD15" bank="VCCIO_2" />
+        <port name="axi0_ARLEN[4]" pin="AE15" bank="VCCIO_2" />
+        <port name="axi0_ARLEN[5]" pin="AF15" bank="VCCIO_2" />
+        <port name="axi0_ARLEN[6]" pin="AH15" bank="VCCIO_2" />
+        <port name="axi0_ARLEN[7]" pin="AJ15" bank="VCCIO_2" />
+        <port name="axi0_ARLOCK" pin="AK15" bank="VCCIO_2" />
+        <port name="axi0_ARCACHE[0]" pin="AL15" bank="VCCIO_2" />
+        <port name="axi0_ARCACHE[1]" pin="A14" bank="VCCIO_2" />
+        <port name="axi0_ARCACHE[2]" pin="B14" bank="VCCIO_2" />
+        <port name="axi0_ARCACHE[3]" pin="C14" bank="VCCIO_2" />
+        <port name="axi0_ARPROT[0]" pin="D14" bank="VCCIO_2" />
+        <port name="axi0_ARPROT[1]" pin="E14" bank="VCCIO_2" />
+        <port name="axi0_ARPROT[2]" pin="F14" bank="VCCIO_2" />
+        <port name="axi0_ARQOS[0]" pin="G14" bank="VCCIO_2" />
+        <port name="axi0_ARQOS[1]" pin="H14" bank="VCCIO_2" />
+        <port name="axi0_ARQOS[2]" pin="J14" bank="VCCIO_2" />
+        <port name="axi0_ARQOS[3]" pin="K14" bank="VCCIO_2" />
+        <port name="axi0_ARSIZE[0]" pin="L14" bank="VCCIO_2" />
+        <port name="axi0_ARSIZE[1]" pin="M14" bank="VCCIO_2" />
+        <port name="axi0_ARSIZE[2]" pin="N14" bank="VCCIO_2" />
+        <port name="axi0_ARESETn" pin="P14" bank="VCCIO_2" />
+        
+        <!-- Write Data -->
+        <port name="axi0_WVALID" pin="R14" bank="VCCIO_2" />
+        <port name="axi0_WREADY" pin="T14" bank="VCCIO_2" />
+        <port name="axi0_WLAST" pin="U14" bank="VCCIO_2" />
+        <!-- 512-bit WDATA not fully enumerated for brevity -->
+        <port name="axi0_WSTRB[0]" pin="V14" bank="VCCIO_2" />
+        <port name="axi0_WSTRB[1]" pin="W14" bank="VCCIO_2" />
+        <port name="axi0_WSTRB[2]" pin="Y14" bank="VCCIO_2" />
+        <port name="axi0_WSTRB[3]" pin="AA14" bank="VCCIO_2" />
+        <port name="axi0_WSTRB[4]" pin="AB14" bank="VCCIO_2" />
+        <port name="axi0_WSTRb[5]" pin="AC14" bank="VCCIO_2" />
+        <port name="axi0_WSTRB[6]" pin="AD14" bank="VCCIO_2" />
+        <port name="axi0_WSTRB[7]" pin="AE14" bank="VCCIO_2" />
+        
+        <!-- Read Data -->
+        <port name="axi0_RVALID" pin="AF14" bank="VCCIO_2" />
+        <port name="axi0_RREADY" pin="AH14" bank="VCCIO_2" />
+        <port name="axi0_RLAST" pin="AJ14" bank="VCCIO_2" />
+        <port name="axi0_RID[0]" pin="AK14" bank="VCCIO_2" />
+        <port name="axi0_RID[1]" pin="AL14" bank="VCCIO_2" />
+        <port name="axi0_RID[2]" pin="A13" bank="VCCIO_2" />
+        <port name="axi0_RID[3]" pin="B13" bank="VCCIO_2" />
+        <port name="axi0_RID[4]" pin="C13" bank="VCCIO_2" />
+        <port name="axi0_RID[5]" pin="D13" bank="VCCIO_2" />
+        <port name="axi0_RRESP[0]" pin="E13" bank="VCCIO_2" />
+        <port name="axi0_RRESP[1]" pin="F13" bank="VCCIO_2" />
+        
+        <!-- Write Response -->
+        <port name="axi0_BVALID" pin="G13" bank="VCCIO_2" />
+        <port name="axi0_BREADY" pin="H13" bank="VCCIO_2" />
+        <port name="axi0_BID[0]" pin="J13" bank="VCCIO_2" />
+        <port name="axi0_BID[1]" pin="K13" bank="VCCIO_2" />
+        <port name="axi0_BID[2]" pin="L13" bank="VCCIO_2" />
+        <port name="axi0_BID[3]" pin="M13" bank="VCCIO_2" />
+        <port name="axi0_BID[4]" pin="N13" bank="VCCIO_2" />
+        <port name="axi0_BID[5]" pin="P13" bank="VCCIO_2" />
+        <port name="axi0_BRESP[0]" pin="R13" bank="VCCIO_2" />
+        <port name="axi0_BRESP[1]" pin="T13" bank="VCCIO_2" />
+    </peripheral>
+    
+    <!-- ====================================================================== -->
+    <!-- JTAG Debug Interface                                                   -->
+    <!-- ====================================================================== -->
+    <peripheral name="JTAG" type="jtag" row="7" col="0">
+        <port name="jtag_inst1_CAPTURE" pin="N5" bank="VCCIO_7" />
+        <port name="jtag_inst1_DRCK" pin="N4" bank="VCCIO_7" />
+        <port name="jtag_inst1_RESET" pin="P5" bank="VCCIO_7" />
+        <port name="jtag_inst1_RUNTEST" pin="P4" bank="VCCIO_7" />
+        <port name="jtag_inst1_SEL" pin="R5" bank="VCCIO_7" />
+        <port name="jtag_inst1_SHIFT" pin="R4" bank="VCCIO_7" />
+        <port name="jtag_inst1_TCK" pin="T5" bank="VCCIO_7" />
+        <port name="jtag_inst1_TDI" pin="T4" bank="VCCIO_7" />
+        <port name="jtag_inst1_TMS" pin="U5" bank="VCCIO_7" />
+        <port name="jtag_inst1_UPDATE" pin="U4" bank="VCCIO_7" />
+        <port name="jtag_inst1_TDO" pin="V5" bank="VCCIO_7" />
+    </peripheral>
+    
+    <!-- ====================================================================== -->
+    <!-- PLL Status Signals                                                     -->
+    <!-- ====================================================================== -->
+    <peripheral name="PLL_STATUS" type="status" row="7" col="1">
+        <port name="pll_inst1_LOCKED" pin="V4" bank="VCCIO_7" />
+        <port name="pll_inst2_LOCKED" pin="W5" bank="VCCIO_7" />
+        <port name="pll_sys_LOCKED" pin="W4" bank="VCCIO_7" />
+        <port name="pll_ddr_LOCKED" pin="Y5" bank="VCCIO_7" />
+        <port name="ddr_inst_CFG_DONE" pin="Y4" bank="VCCIO_7" />
+        <port name="ddr_inst_CTRL_BUSY[0]" pin="AA5" bank="VCCIO_7" />
+        <port name="ddr_inst_CTRL_BUSY[1]" pin="AA4" bank="VCCIO_7" />
+        <port name="ddr_inst_CTRL_INT" pin="AB5" bank="VCCIO_7" />
+        <port name="ddr_inst_CTRL_REFRESH" pin="AB4" bank="VCCIO_7" />
+        <port name="ddr_inst_CTRL_MEM_RST_VALID" pin="AC5" bank="VCCIO_7" />
+        <port name="ddr_inst_CTRL_CKE[0]" pin="AC4" bank="VCCIO_7" />
+        <port name="ddr_inst_CTRL_CKE[1]" pin="AD5" bank="VCCIO_7" />
+    </peripheral>
+    
+    <!-- ====================================================================== -->
+    <!-- LED Outputs                                                            -->
+    <!-- ====================================================================== -->
+    <peripheral name="LED" type="output" row="7" col="2">
+        <port name="led[0]" pin="AD4" bank="VCCIO_7" />
+        <port name="led[1]" pin="AD3" bank="VCCIO_7" />
+        <port name="led[2]" pin="AE4" bank="VCCIO_7" />
+        <port name="led[3]" pin="AE3" bank="VCCIO_7" />
+    </peripheral>
+    
+</EFX_PERI_INTERFACE>

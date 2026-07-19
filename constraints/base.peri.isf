@@ -1,0 +1,61 @@
+# AweSOM Tj180 Core Module (TJ180A484S) — IO constraints (ISF)
+# Efinity Interface Script Format — native to Efinity toolchain.
+# Consumed by efx_run_pt_unified.py to generate <design>.peri.xml.
+#
+# Board-level signals: on-module oscillators + user LED.
+# Carrier peripheral signals are provided by the carrier's base.peri.isf
+# fragment and merged in by the CLI at project creation time.
+
+# Edge bank voltages (all GPIOs are on 1.8V banks)
+design.set_device_property("TL","DYNAMIC_VOLTAGE","0","IOBANK")
+design.set_device_property("TL","VOLTAGE","1.8","IOBANK")
+design.set_device_property("TR","DYNAMIC_VOLTAGE","0","IOBANK")
+design.set_device_property("TR","VOLTAGE","1.8","IOBANK")
+design.set_device_property("BL","DYNAMIC_VOLTAGE","0","IOBANK")
+design.set_device_property("BL","VOLTAGE","1.8","IOBANK")
+design.set_device_property("BR","DYNAMIC_VOLTAGE","0","IOBANK")
+design.set_device_property("BR","VOLTAGE","1.8","IOBANK")
+
+# ===== Clock inputs (from on-module oscillators) =====
+# U13: 50MHz main reference clock
+design.create_input_gpio("clk50_in")
+design.assign_pkg_pin("clk50_in","T18")
+# U14: 33.33MHz DDR reference clock
+design.create_input_gpio("clk33_ddr")
+design.assign_pkg_pin("clk33_ddr","Y14")
+# U15: 27MHz MIPI reference clock (two channels)
+design.create_input_gpio("clk27_mipi_a")
+design.assign_pkg_pin("clk27_mipi_a","AA10")
+design.create_input_gpio("clk27_mipi_b")
+design.assign_pkg_pin("clk27_mipi_b","AA15")
+
+# ===== User LED =====
+# D4: green LED (active low) on AA11
+design.create_output_gpio("led_user")
+design.assign_pkg_pin("led_user","AA11")
+
+# NOTE: User buttons (rst_n_i + btn_n[3:1]) are provided by the carrier
+# board (awesom-base). See ecosystem/carriers/awesom-base/constraints/base.peri.isf.
+# Full P1/P2/P3 connector GPIO mappings are in the core module spec,
+# Appendix A "connector pin assignment", added by jacket projects as needed.
+
+
+# ===== Carrier peripherals (awesom-base) =====
+# AweSOM Base Board — peripherals fragment (ISF)
+# This fragment is appended to the board's base.peri.isf by the CLI
+# (_generate_skeleton) at project creation time. Contains only the
+# carrier-specific GPIO definitions; core-module signals come from the
+# board's base.peri.isf.
+
+# ===== User buttons KEY0-KEY3 (GPIOL bank, 1.8V) =====
+design.create_input_gpio("rst_n_i")
+design.assign_pkg_pin("rst_n_i","W14")
+design.create_input_gpio("btn_n[1]")
+design.assign_pkg_pin("btn_n[1]","AA9")
+design.create_input_gpio("btn_n[2]")
+design.assign_pkg_pin("btn_n[2]","Y16")
+design.create_input_gpio("btn_n[3]")
+design.assign_pkg_pin("btn_n[3]","AB15")
+
+# ===== User LED D25/D26 =====
+# FPGA pin mappings TBD — not defined until verified against schematic.
