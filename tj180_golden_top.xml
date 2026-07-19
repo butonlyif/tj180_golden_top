@@ -18,6 +18,7 @@
         
         <efx:design_file name="rtl/cdc/async_fifo.sv" version="default" library="default" />
         <efx:design_file name="rtl/ctrl/loopback_ctrl.sv" version="default" library="default" />
+        <efx:design_file name="rtl/ctrl/mac_rx2tx.sv" version="default" library="default" />
         <efx:design_file name="rtl/ip_wrappers/hard_csi_tx_wrapper.sv" version="default" library="default" />
         <efx:design_file name="rtl/ip_wrappers/mipi_csi_tx_2p5g_wrapper.sv" version="default" library="default" />
         <efx:design_file name="rtl/ctrl/apb_decoder_1to3.sv" version="default" library="default" />
